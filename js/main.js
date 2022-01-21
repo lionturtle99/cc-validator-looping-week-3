@@ -40,3 +40,16 @@ function validator(numbers) {
   }
 }
 
+function typeOfCard(numbers) {
+  if (numbers[0] === "4" && numbers.length === 16){
+      return "This card is an Visa"
+  } else if (numbers[0] === "5" && numbers.length === 16){
+      return "This is a Mastercard"
+  } else if (numbers[0] === "6" && numbers.length === 16){
+      return "This card is an Discover"
+  } else if (numbers[0, 1] === "3", "4" || numbers[0, 1] === "3", "7" && numbers.length === 15){
+      return "This card is an American Express"
+  } else {
+      return "This isn't a debit/credit card"
+  }
+}
