@@ -26,4 +26,17 @@ function validator(numbers) {
     modifiedArr.push(element)
     }
   });
-  
+  let sumOfArray = 0
+  modifiedArr.forEach(function(element){
+    sumOfArray += element;
+  })
+  console.log(modifiedArr +"modifiedArr")
+  let sumString = sumOfArray.toString()
+  console.log(sumString[-1])
+  if (parseInt(sumString[-1]) === 0) {
+    return "This Number is Valid"
+  } else {
+    return "This Number is not Valid"
+  }
+}
+
