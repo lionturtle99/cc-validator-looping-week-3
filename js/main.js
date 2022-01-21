@@ -26,30 +26,4 @@ function validator(numbers) {
     modifiedArr.push(element)
     }
   });
-  let sumOfArray = 0
-  modifiedArr.forEach(function(element){
-    sumOfArray += element;
-  })
-  console.log(modifiedArr +"modifiedArr")
-  let sumString = sumOfArray.toString()
-  console.log(sumString[-1])
-  if (parseInt(sumString[-1]) === 0) {
-    return "This Number is Valid"
-  } else {
-    return "This Number is not Valid"
-  }
-}
-
-function typeOfCard(numbers) {
-  if (numbers[0] === "4" && numbers.length === 16){
-      return "This card is an Visa"
-  } else if (numbers[0] === "5" && numbers.length === 16){
-      return "This is a Mastercard"
-  } else if (numbers[0] === "6" && numbers.length === 16){
-      return "This card is an Discover"
-  } else if (numbers[0, 1] === "3", "4" || numbers[0, 1] === "3", "7" && numbers.length === 15){
-      return "This card is an American Express"
-  } else {
-      return "This isn't a debit/credit card"
-  }
-}
+  
